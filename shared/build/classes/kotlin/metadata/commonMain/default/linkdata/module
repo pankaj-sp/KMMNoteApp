@@ -1,0 +1,2 @@
+
+<shared_commonMain>:com.example.kmmnoteapp:!com.example.kmmnoteapp.data.local: com.example.kmmnoteapp.data.note:"com.example.kmmnoteapp.domain.note:"com.example.kmmnoteapp.domain.time:#com.example.kmmnoteapp.presentation:*com.example.kmmnoteapp.sqldelight.database:1com.example.kmmnoteapp.sqldelight.database.shared:database

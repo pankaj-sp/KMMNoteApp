@@ -1,0 +1,4 @@
+com.example.kmmnoteapp.android.test.androidApp-androidTest-0 /Users/pankaj/KMMNoteApp/androidApp/build/generated/res/resValues/androidTest/debug
+com.example.kmmnoteapp.android.test.androidApp-mergeDebugAndroidTestResources-1 /Users/pankaj/KMMNoteApp/androidApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.kmmnoteapp.android.test.androidApp-mergeDebugAndroidTestResources-2 /Users/pankaj/KMMNoteApp/androidApp/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.kmmnoteapp.android.test.androidApp-debugAndroidTest-3 /Users/pankaj/KMMNoteApp/androidApp/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

@@ -1,3 +1,4 @@
+package com.example.kmmnoteapp.android.di
 import android.app.Application
 import app.cash.sqldelight.db.SqlDriver
 import com.example.kmmnoteapp.data.local.DatabaseDriverFactory
@@ -9,6 +10,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
+
 
 @Module
 @InstallIn(SingletonComponent::class)

@@ -6,7 +6,14 @@ animator fragment_fade_enter
 animator fragment_fade_exit
 animator fragment_open_enter
 animator fragment_open_exit
+attr action
 attr alpha
+attr argType
+attr data
+attr dataPattern
+attr destination
+attr enterAnim
+attr exitAnim
 attr font
 attr fontProviderAuthority
 attr fontProviderCerts
@@ -18,11 +25,26 @@ attr fontProviderSystemFontFamily
 attr fontStyle
 attr fontVariationSettings
 attr fontWeight
+attr graph
 attr lStar
+attr launchSingleTop
+attr mimeType
+attr navGraph
 attr nestedScrollViewStyle
+attr nullable
+attr popEnterAnim
+attr popExitAnim
+attr popUpTo
+attr popUpToInclusive
+attr popUpToSaveState
 attr queryPatterns
+attr restoreState
+attr route
 attr shortcutMatchRequired
+attr startDestination
+attr targetPackage
 attr ttcIndex
+attr uri
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
 color call_notification_answer_color
@@ -130,6 +152,7 @@ id is_pooling_container_tag
 id italic
 id line1
 id line3
+id nav_controller_view_tag
 id normal
 id notification_background
 id notification_main_column
@@ -267,6 +290,7 @@ style TextAppearance_Compat_Notification_Time
 style TextAppearance_Compat_Notification_Title
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
+styleable ActivityNavigator android_name action data dataPattern targetPackage
 styleable Capability queryPatterns shortcutMatchRequired
 styleable ColorStateListItem android_color android_alpha android_lStar alpha lStar
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery fontProviderSystemFontFamily
@@ -275,3 +299,10 @@ styleable Fragment android_name android_id android_tag
 styleable FragmentContainerView android_name android_tag
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable NavAction android_id destination enterAnim exitAnim launchSingleTop popEnterAnim popExitAnim popUpTo popUpToInclusive popUpToSaveState restoreState
+styleable NavArgument android_name android_defaultValue argType nullable
+styleable NavDeepLink android_autoVerify action mimeType uri
+styleable NavGraphNavigator startDestination
+styleable NavHost navGraph
+styleable NavInclude graph
+styleable Navigator android_label android_id route

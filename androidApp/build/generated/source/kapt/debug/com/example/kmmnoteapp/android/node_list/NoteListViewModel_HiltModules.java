@@ -10,9 +10,7 @@ import dagger.hilt.android.components.ViewModelComponent;
 import dagger.hilt.android.internal.lifecycle.HiltViewModelMap;
 import dagger.hilt.codegen.OriginatingElement;
 import dagger.multibindings.IntoMap;
-import dagger.multibindings.IntoSet;
-import dagger.multibindings.StringKey;
-import java.lang.String;
+import dagger.multibindings.LazyClassKey;
 
 @OriginatingElement(
     topLevelClass = NoteListViewModel.class
@@ -29,7 +27,7 @@ public final class NoteListViewModel_HiltModules {
 
     @Binds
     @IntoMap
-    @StringKey("com.example.kmmnoteapp.android.node_list.NoteListViewModel")
+    @LazyClassKey(NoteListViewModel.class)
     @HiltViewModelMap
     public abstract ViewModel binds(NoteListViewModel vm);
   }
@@ -41,10 +39,11 @@ public final class NoteListViewModel_HiltModules {
     }
 
     @Provides
-    @IntoSet
+    @IntoMap
+    @LazyClassKey(NoteListViewModel.class)
     @HiltViewModelMap.KeySet
-    public static String provide() {
-      return "com.example.kmmnoteapp.android.node_list.NoteListViewModel";
+    public static boolean provide() {
+      return true;
     }
   }
 }

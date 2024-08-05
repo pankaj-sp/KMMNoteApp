@@ -1,13 +1,9 @@
 plugins {
-//    alias(libs.plugins.androidApplication)
-//    alias(libs.plugins.kotlinAndroid)
-//    alias(libs.plugins.jetbrainsKotlinKapt)
+    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.jetbrainsKotlinKapt)
     alias(libs.plugins.compose.compiler)
-//    alias(libs.plugins.hilt)
-    id("com.android.application")
-    kotlin("android")
-    id("kotlin-kapt")
-    id("dagger.hilt.android.plugin")
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -59,14 +55,10 @@ dependencies {
     implementation(libs.kotlinx.datetime)
     coreLibraryDesugaring(libs.desugar.jdk.libs)
 
-    implementation("com.google.dagger:hilt-android:2.43.2")
-    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-    kapt("com.google.dagger:hilt-android-compiler:2.43.2")
-    kapt("androidx.hilt:hilt-compiler:1.0.0")
-//    implementation(libs.androidx.hilt.navigation.compose)
-//
-//    implementation(libs.hilt.android)
-//    kapt(libs.hilt.android.compiler)
-//    kapt(libs.androidx.hilt.compiler)
-//    kapt(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    kapt(libs.androidx.hilt.compiler)
+    kapt(libs.hilt.compiler)
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
 }

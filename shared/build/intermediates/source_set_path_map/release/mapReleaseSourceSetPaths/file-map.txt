@@ -1,0 +1,10 @@
+com.example.kmmnoteapp.shared-sqlite-framework-2.4.0-0 /Users/pankaj/.gradle/caches/transforms-4/4295079cffe48a74c0babcfb4f2ed2e8/transformed/sqlite-framework-2.4.0/res
+com.example.kmmnoteapp.shared-sqlite-2.4.0-1 /Users/pankaj/.gradle/caches/transforms-4/988ca12f8235daf588ad0bfa3e8ffaa1/transformed/sqlite-2.4.0/res
+com.example.kmmnoteapp.shared-pngs-2 /Users/pankaj/KMMNoteApp/shared/build/generated/res/pngs/release
+com.example.kmmnoteapp.shared-resValues-3 /Users/pankaj/KMMNoteApp/shared/build/generated/res/resValues/release
+com.example.kmmnoteapp.shared-mergeReleaseResources-4 /Users/pankaj/KMMNoteApp/shared/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.example.kmmnoteapp.shared-mergeReleaseResources-5 /Users/pankaj/KMMNoteApp/shared/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.example.kmmnoteapp.shared-release-6 /Users/pankaj/KMMNoteApp/shared/build/intermediates/merged_res/release/mergeReleaseResources
+com.example.kmmnoteapp.shared-androidMain-7 /Users/pankaj/KMMNoteApp/shared/src/androidMain/res
+com.example.kmmnoteapp.shared-main-8 /Users/pankaj/KMMNoteApp/shared/src/main/res
+com.example.kmmnoteapp.shared-release-9 /Users/pankaj/KMMNoteApp/shared/src/release/res

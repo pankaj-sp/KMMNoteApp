@@ -1,6 +1,8 @@
 package com.example.kmmnoteapp.android;
 
+import com.example.kmmnoteapp.android.di.AppModule;
 import com.example.kmmnoteapp.android.node_list.NoteListViewModel_HiltModules;
+import com.example.kmmnoteapp.android.note_detail.NoteDetailViewModel_HiltModules;
 import dagger.Binds;
 import dagger.Component;
 import dagger.Module;
@@ -147,6 +149,7 @@ public final class NoteApp_HiltComponents {
           HiltWrapper_SavedStateHandleModule.class,
           ActivityCBuilderModule.class,
           ViewModelCBuilderModule.class,
+          NoteDetailViewModel_HiltModules.KeyModule.class,
           NoteListViewModel_HiltModules.KeyModule.class
       }
   )
@@ -169,7 +172,8 @@ public final class NoteApp_HiltComponents {
       }
   )
   @ActivityScoped
-  public abstract static class ActivityC implements ActivityComponent,
+  public abstract static class ActivityC implements MainActivity_GeneratedInjector,
+      ActivityComponent,
       DefaultViewModelFactories.ActivityEntryPoint,
       HiltWrapper_HiltViewModelFactory_ActivityCreatorEntryPoint,
       FragmentComponentManager.FragmentComponentBuilderEntryPoint,
@@ -183,6 +187,7 @@ public final class NoteApp_HiltComponents {
   @Subcomponent(
       modules = {
           HiltWrapper_HiltViewModelFactory_ViewModelModule.class,
+          NoteDetailViewModel_HiltModules.BindsModule.class,
           NoteListViewModel_HiltModules.BindsModule.class
       }
   )

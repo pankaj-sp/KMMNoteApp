@@ -14,7 +14,10 @@ import javax.inject.Provider;
 @DaggerGenerated
 @SuppressWarnings({
     "unchecked",
-    "rawtypes"
+    "rawtypes",
+    "KotlinInternal",
+    "KotlinInternalInJava",
+    "cast"
 })
 public final class NoteListViewModel_Factory implements Factory<NoteListViewModel> {
   private final Provider<NoteDataSource> noteDataSourceProvider;
